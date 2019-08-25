@@ -1,0 +1,13 @@
+TestLis.c
+Lista.c
+.\Lista.c(1469) : warning C4133: '=' : incompatible types - from 'LIS_tpLista *' to 'tgLista *'
+.\Lista.c(1652) : warning C4133: '=' : incompatible types - from 'LIS_tpLista *' to 'tgLista *'
+Microsoft (R) Incremental Linker Version 10.00.30319.01
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+/OUT:TesteListaDebug.exe 
+/INCREMENTAL:NO 
+/MACHINE:IX86 
+TestLis.obj Lista.obj 
+ArcaboucoTeste.lib 
+

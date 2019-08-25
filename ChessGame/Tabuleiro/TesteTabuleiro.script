@@ -1,0 +1,190 @@
+// Script:    TesteTabuleiro.script
+// Autor:     Nicolas Jordao Cortez
+// Data:      15/10/2014
+// Propósito: testar o modulo peca
+
+== Inicializar valores
+
+=declararparm   linha1  int 0
+=declararparm   linha2  int 1
+=declararparm   linha3  int 2
+=declararparm   linha4  int 3
+=declararparm   linha5  int 4
+=declararparm   linha6  int 5
+=declararparm   linha7  int 6
+=declararparm   linha8  int 7
+
+=declararparm   colunaA  int 0
+=declararparm   colunaB  int 1
+=declararparm   colunaC  int 2
+=declararparm   colunaD  int 3
+=declararparm   colunaE  int 4
+=declararparm   colunaF  int 5
+=declararparm   colunaG  int 6
+=declararparm   colunaH  int 7
+
+=declararparm   torre   char 'T'
+=declararparm   cavalo  char 'C'
+=declararparm   rei     char 'R'
+=declararparm   rainha  char 'D'
+=declararparm   bispo   char 'B'
+=declararparm   peao    char 'P'
+
+=declararparm   branca    char  'B'
+=declararparm   preta    char  'P'
+
+=declararparm   vazio    char  'V'
+
+=declararparm   OK                     int  0
+=declararparm   OrigemSemPeca          int  1
+=declararparm   MovimentoInvalido      int  2
+=declararparm   Colisao                int  3
+=declararparm   PecaInvalida           int  4
+=declararparm   CoordenadaInvalida     int  5
+
+=declararparm   pNULL          int  0
+=declararparm   pNaoNULL       int  1
+
+== Criar uma peca
+=criarpeca 
+
+==Criar um tabuleiro
+=criartabuleiro
+
+== Inserir uma rainha e movimenta-la verificando a corretude a cada passo
+=settipo      rainha   OK
+=setcor       branca   OK
+=gettipo      rainha 
+=getcor       branca
+=inserirpeca linha1 colunaA OK
+=obterpeca linha1 colunaA rainha branca
+=moverpeca linha1 colunaA linha1 colunaE OK
+=obterpeca linha1 colunaA vazio vazio
+=obterpeca linha1 colunaE rainha branca
+=moverpeca linha1 colunaE linha4 colunaB OK
+=obterpeca linha1 colunaE vazio vazio
+=obterpeca linha4 colunaB rainha branca
+=moverpeca linha4 colunaB linha3 colunaD MovimentoInvalido
+=obterpeca linha4 colunaB rainha branca
+=obterpeca linha3 colunaD vazio vazio
+
+== Inserir um peao e movimenta-lo verificando a corretude a cada passo
+=settipo      peao    OK
+=setcor       preta   OK
+=gettipo      peao 
+=getcor       preta
+=inserirpeca linha2 colunaC OK
+=obterpeca linha2 colunaC peao preta
+=moverpeca linha2 colunaC linha3 colunaC OK
+=obterpeca linha3 colunaC peao preta
+=obterpeca linha2 colunaC vazio vazio
+=moverpeca linha3 colunaC linha4 colunaB OK
+=obterpeca linha3 colunaC vazio vazio
+=obterpeca linha4 colunaB peao preta
+=moverpeca linha4 colunaB linha3 colunaB MovimentoInvalido
+=obterpeca linha3 colunaB vazio vazio
+=moverpeca linha4 colunaB linha6 colunaB MovimentoInvalido
+=obterpeca linha6 colunaB vazio vazio
+=moverpeca linha4 colunaB linha5 colunaC MovimentoInvalido
+=obterpeca linha5 colunaC vazio vazio
+=obterpeca linha4 colunaB peao preta
+
+
+== Inserir uma torre e movimenta-lo verificando a corretude a cada passo
+=settipo      torre    OK
+=setcor       branca   OK
+=gettipo      torre 
+=getcor       branca
+=inserirpeca linha8 colunaH OK
+=obterpeca linha8 colunaH torre branca
+=moverpeca linha8 colunaH linha8 colunaB OK
+=obterpeca linha8 colunaB torre branca
+=obterpeca linha8 colunaH vazio vazio
+=moverpeca linha8 colunaB linha4 colunaB OK
+=obterpeca linha8 colunaB vazio vazio
+=obterpeca linha4 colunaB torre branca
+=moverpeca linha4 colunaB linha6 colunaD MovimentoInvalido
+=obterpeca linha6 colunaD vazio vazio
+=obterpeca linha4 colunaB torre branca
+
+
+== Inserir uma rei e movimenta-lo verificando a corretude a cada passo
+=settipo      rei    OK
+=setcor       preta  OK
+=gettipo      rei 
+=getcor       preta
+=inserirpeca linha5 colunaC OK
+=obterpeca linha5 colunaC rei preta
+=moverpeca linha5 colunaC linha4 colunaB OK
+=obterpeca linha4 colunaB rei preta
+=obterpeca linha5 colunaC vazio vazio
+=moverpeca linha4 colunaB linha5 colunaB OK
+=obterpeca linha4 colunaB vazio vazio
+=obterpeca linha5 colunaB rei preta
+=moverpeca linha5 colunaB linha5 colunaA OK
+=obterpeca linha5 colunaB vazio vazio
+=obterpeca linha5 colunaA rei preta
+=moverpeca linha5 colunaA linha7 colunaA MovimentoInvalido
+=obterpeca linha7 colunaA vazio vazio
+=moverpeca linha5 colunaA linha3 colunaC MovimentoInvalido
+=obterpeca linha3 colunaC vazio vazio
+=moverpeca linha5 colunaA linha5 colunaC MovimentoInvalido
+=obterpeca linha5 colunaC vazio vazio
+=obterpeca linha5 colunaA rei preta
+
+== Inserir um cavalo e movimenta-lo verificando a corretude a cada passo
+=settipo      cavalo   OK
+=setcor       branca   OK
+=gettipo      cavalo 
+=getcor       branca
+=inserirpeca linha6 colunaD OK
+=obterpeca linha6 colunaD cavalo branca
+=moverpeca linha6 colunaD linha7 colunaB OK
+=obterpeca linha7 colunaB cavalo branca
+=obterpeca linha6 colunaD vazio vazio
+=moverpeca linha7 colunaB linha5 colunaA OK
+=obterpeca linha7 colunaB vazio vazio
+=obterpeca linha5 colunaA cavalo branca
+=moverpeca linha5 colunaA linha7 colunaA MovimentoInvalido
+=obterpeca linha7 colunaA vazio vazio
+=moverpeca linha5 colunaA linha3 colunaC MovimentoInvalido
+=obterpeca linha3 colunaC vazio vazio
+=obterpeca linha5 colunaA cavalo branca
+
+
+== Inserir um bispo e movimenta-lo verificando a corretude a cada passo
+=settipo      bispo    OK
+=setcor       preta   OK
+=gettipo      bispo 
+=getcor       preta
+=inserirpeca linha3 colunaG OK
+=obterpeca linha3 colunaG bispo preta
+=moverpeca linha3 colunaG linha1 colunaE OK
+=obterpeca linha1 colunaE bispo preta
+=obterpeca linha3 colunaG vazio vazio
+=moverpeca linha1 colunaE linha5 colunaA OK
+=obterpeca linha1 colunaE vazio vazio
+=obterpeca linha5 colunaA bispo preta
+=moverpeca linha5 colunaA linha7 colunaA MovimentoInvalido
+=obterpeca linha7 colunaA vazio vazio
+=moverpeca linha5 colunaA linha5 colunaC MovimentoInvalido
+=obterpeca linha5 colunaC vazio vazio
+=obterpeca linha5 colunaA bispo preta
+
+== Retirar peca
+=retirarpeca linha5 colunaA OK
+
+== verificar peca retirada no tabuleiro
+=obterpeca linha5 colunaA vazio vazio
+
+==verificar se uma casa possui lista de ameacantes e lista de ameacados
+=obterameacantes linha8 colunaA pNaoNULL
+=obterameacados  linha8 colunaA pNaoNULL
+
+== Mover peca de uma casa vazia
+=moverpeca linha5 colunaB linha3 colunaB OrigemSemPeca 
+
+== Destruir tabuleiro
+=destruirtabuleiro 
+
+// fim

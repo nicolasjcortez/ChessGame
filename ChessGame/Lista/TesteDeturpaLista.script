@@ -1,0 +1,292 @@
+// Script:    TesteDeturpaLista-1.script
+// Autor:     Nicolas Cortez
+// Data:      6/12/2014
+// Propósito: Testar construção de lista
+//
+
+
+== Inicializar valores
+=declararparm   lista0  int 0
+=declararparm   lista1  int 1
+=declararparm   lista2  int 2
+
+=declararparm   str0    string  "abcdefg"
+=declararparm   str1    string  "qwerty"
+=declararparm   str2    string  "xxx"
+=declararparm   str3    string  "xpto"
+
+=declararparm   OK             int  1
+=declararparm   ListaVazia     int  2
+=declararparm   FimLista       int  3
+=declararparm   NaoAchou       int  4
+=declararparm   FaltouMemoria  int  5
+=declararparm   ErroEstrutura  int  6
+
+=declararparm   pNULL          int  0
+=declararparm   pNaoNULL       int  1
+
+
+== Iniciar contadores de passagem
+=inicializarcontadores  "."
+
+== Criar lista
+=criarlista       lista0
+=inselemantes    lista0   str0   OK
+=inselemapos     lista0   str3   OK
+=avancarelem     lista0   -1     OK
+=inselemapos     lista0   str2   OK
+=inselemantes     lista0   str1   OK
+=avancarelem     lista0   1     OK
+=obtervalorelem  lista0   str2   pNaoNULL
+
+== Verificar lista
+=verificarlista   lista0   OK
+
+== Anular ponteiro anterior
+=deturpar          lista0   3
+=verificarlista    lista0   ErroEstrutura
+=AceitaFalhasAcumuladas     1
+
+== Destruir a lista
+=destruirlista          lista0
+
+== Criar lista
+=criarlista       lista0
+=inselemantes    lista0   str0   OK
+=inselemapos     lista0   str3   OK
+=avancarelem     lista0   -1     OK
+=inselemapos     lista0   str2   OK
+=inselemantes     lista0   str1   OK
+=avancarelem     lista0   1     OK
+=obtervalorelem  lista0   str2   pNaoNULL
+
+== Anular ponteiro proximo
+=deturpar          lista0   4
+=verificarlista    lista0   ErroEstrutura
+=AceitaFalhasAcumuladas     1
+
+== Destruir a lista
+=destruirlista          lista0
+
+
+
+== Criar lista
+=criarlista       lista0
+=inselemantes    lista0   str0   OK
+=inselemapos     lista0   str3   OK
+=avancarelem     lista0   -1     OK
+=inselemapos     lista0   str2   OK
+=inselemantes     lista0   str1   OK
+=avancarelem     lista0   1     OK
+=obtervalorelem  lista0   str2   pNaoNULL
+
+==Lixo ponteiro anterior
+=deturpar          lista0   5
+=verificarlista    lista0   ErroEstrutura
+=AceitaFalhasAcumuladas     1
+
+== Destruir a lista
+=destruirlista          lista0
+
+
+== Criar lista
+=criarlista       lista0
+=inselemantes    lista0   str0   OK
+=inselemapos     lista0   str3   OK
+=avancarelem     lista0   -1     OK
+=inselemapos     lista0   str2   OK
+=inselemantes     lista0   str1   OK
+=avancarelem     lista0   1     OK
+=obtervalorelem  lista0   str2   pNaoNULL
+
+
+==Anula ponteiro corrente
+=deturpar          lista0   7
+=verificarlista    lista0   ErroEstrutura
+=AceitaFalhasAcumuladas     1
+
+
+== Destruir a lista
+=destruirlista          lista0
+
+== Criar lista
+=criarlista       lista0
+=inselemantes    lista0   str0   OK
+=inselemapos     lista0   str3   OK
+=avancarelem     lista0   -1     OK
+=inselemapos     lista0   str2   OK
+=inselemantes     lista0   str1   OK
+=avancarelem     lista0   1     OK
+=obtervalorelem  lista0   str2   pNaoNULL
+
+
+==Lixo ponteiro corrente
+=deturpar          lista0   8
+=verificarlista    lista0   ErroEstrutura
+=AceitaFalhasAcumuladas     1
+
+
+== Destruir a lista
+=destruirlista          lista0
+
+== Criar lista
+=criarlista       lista0
+=inselemantes    lista0   str0   OK
+=inselemapos     lista0   str3   OK
+=avancarelem     lista0   -1     OK
+=inselemapos     lista0   str2   OK
+=inselemantes     lista0   str1   OK
+=avancarelem     lista0   1     OK
+=obtervalorelem  lista0   str2   pNaoNULL
+
+
+==Anula ponteiro origem
+=deturpar          lista0   9
+=verificarlista    lista0   ErroEstrutura
+=AceitaFalhasAcumuladas     1
+
+
+== Destruir a lista
+=destruirlista          lista0
+
+== Criar lista
+=criarlista       lista0
+=inselemantes    lista0   str0   OK
+=inselemapos     lista0   str3   OK
+=avancarelem     lista0   -1     OK
+=inselemapos     lista0   str2   OK
+=inselemantes     lista0   str1   OK
+=avancarelem     lista0   1     OK
+=obtervalorelem  lista0   str2   pNaoNULL
+
+
+==Anula ponteiro valor
+=deturpar          lista0   11
+=verificarlista    lista0   ErroEstrutura
+=AceitaFalhasAcumuladas     1
+
+== Destruir a lista
+=destruirlista          lista0
+
+== Criar lista
+=criarlista       lista0
+=inselemantes    lista0   str0   OK
+=inselemapos     lista0   str3   OK
+=avancarelem     lista0   -1     OK
+=inselemapos     lista0   str2   OK
+=inselemantes     lista0   str1   OK
+=avancarelem     lista0   1     OK
+=obtervalorelem  lista0   str2   pNaoNULL
+
+
+==Anular ponteiro fim
+=deturpar          lista0   13
+=verificarlista    lista0   ErroEstrutura
+=AceitaFalhasAcumuladas     1
+
+
+== Destruir a lista
+=destruirlista          lista0
+
+== Criar lista
+=criarlista       lista0
+=inselemantes    lista0   str0   OK
+=inselemapos     lista0   str3   OK
+=avancarelem     lista0   -1     OK
+=inselemapos     lista0   str2   OK
+=inselemantes     lista0   str1   OK
+=avancarelem     lista0   1     OK
+=obtervalorelem  lista0   str2   pNaoNULL
+
+
+==Lixo ponteiro fim
+=deturpar          lista0   14
+=verificarlista    lista0   ErroEstrutura
+=AceitaFalhasAcumuladas     1
+
+== Destruir a lista
+=destruirlista          lista0
+
+== Criar lista
+=criarlista       lista0
+=inselemantes    lista0   str0   OK
+=inselemapos     lista0   str3   OK
+=avancarelem     lista0   -1     OK
+=inselemapos     lista0   str2   OK
+=inselemantes     lista0   str1   OK
+=avancarelem     lista0   1     OK
+=obtervalorelem  lista0   str2   pNaoNULL
+
+
+==Alterar tipo cabeca
+=deturpar          lista0   15
+=verificarlista    lista0   ErroEstrutura
+=AceitaFalhasAcumuladas     1
+
+== Destruir a lista
+=destruirlista          lista0
+
+
+== Criar lista
+=criarlista       lista0
+=inselemantes    lista0   str0   OK
+=inselemapos     lista0   str3   OK
+=avancarelem     lista0   -1     OK
+=inselemapos     lista0   str2   OK
+=inselemantes     lista0   str1   OK
+=avancarelem     lista0   1     OK
+=obtervalorelem  lista0   str2   pNaoNULL
+
+
+==Anular ponteiro cabeca
+=deturpar          lista0   16
+=verificarlista    lista0   ErroEstrutura
+=AceitaFalhasAcumuladas     1
+
+== Destruir a lista
+=destruirlista          lista0
+
+
+== Criar lista
+=criarlista       lista0
+=inselemantes    lista0   str0   OK
+=inselemapos     lista0   str3   OK
+=avancarelem     lista0   -1     OK
+=inselemapos     lista0   str2   OK
+=inselemantes     lista0   str1   OK
+=avancarelem     lista0   1     OK
+=obtervalorelem  lista0   str2   pNaoNULL
+
+
+==Lixo ponteiro cabeca
+=deturpar          lista0   17
+=verificarlista    lista0   ErroEstrutura
+=AceitaFalhasAcumuladas     1
+
+== Destruir a lista
+=destruirlista          lista0
+
+
+== Criar lista
+=criarlista       lista0
+=inselemantes    lista0   str0   OK
+=inselemapos     lista0   str3   OK
+=avancarelem     lista0   -1     OK
+=inselemapos     lista0   str2   OK
+=inselemantes     lista0   str1   OK
+=avancarelem     lista0   1     OK
+=obtervalorelem  lista0   str2   pNaoNULL
+
+
+==Alterar tipo elemento
+=deturpar          lista0   18
+=verificarlista    lista0   ErroEstrutura
+=AceitaFalhasAcumuladas     1
+
+== Destruir a lista
+=destruirlista          lista0
+
+
+
+
+// fim

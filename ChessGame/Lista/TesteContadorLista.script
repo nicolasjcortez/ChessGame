@@ -1,0 +1,99 @@
+// Script:    TesteContadorLista.script
+// Autor:     Arndt von Staa
+// Data:      6/12/2014
+// Propósito:  script para controle de cobertura
+//
+
+== Inicializar valores
+=declararparm   lista0  int 0
+=declararparm   lista1  int 1
+=declararparm   lista2  int 2
+
+=declararparm   str0    string  "abcdefg"
+=declararparm   str1    string  "qwerty"
+=declararparm   str2    string  "xxx"
+=declararparm   str3    string  "xpto"
+
+=declararparm   OK             int  1
+=declararparm   ListaVazia     int  2
+=declararparm   FimLista       int  3
+=declararparm   NaoAchou       int  4
+=declararparm   FaltouMemoria  int  5
+
+=declararparm   pNULL          int  0
+=declararparm   pNaoNULL       int  1
+
+==Iniciar contagem
+=inicializarcontadores ""
+=lercontadores "Lista"
+=iniciarcontagem
+
+== Criar a lista 0
+=criarlista      lista0 
+
+
+== Verificar contadores, 2 deles já contaram
+=verificarcontagens    12
+=contagemcontador   "LIS_CriarLista"  1
+=contagemcontador   "LimparCabeca"  1
+=AceitaFalhasAcumuladas 12
+
+
+== Criar lista
+=criarlista       lista1
+=inselemantes    lista1   str0   OK
+=inselemapos     lista1   str1   OK
+=obtervalorelem  lista1   str1   pNaoNULL
+
+==Avancar do elemento fim
+=avancarelem     lista1   1     FimLista
+
+==Ir para o fim do fim 
+=irfinal lista1 
+=obtervalorelem  lista1   str1   pNaoNULL
+
+== Verificar contadores, 6 deles já contaram
+=verificarcontagens    6
+=contagemcontador   "LIS_CriarLista"  2
+=contagemcontador   "LimparCabeca"  2
+=contagemcontador   "LIS_InserirElementoAntes"  1
+=contagemcontador   "LIS_InserirElementoApos"  1
+=contagemcontador   "LIS_ObterValor"  2
+=contagemcontador   "CriarElemento"  2
+=contagemcontador   "LIS_IrFinalLista"  1
+=AceitaFalhasAcumuladas 6
+
+==Excluir o inicio 
+=irinicio lista1 
+=obtervalorelem  lista1   str0   pNaoNULL
+=excluirelem lista1 OK
+
+==Procurar valor e nao encontrar
+=procurarvalor lista1 str1 NaoAchou
+
+
+
+==Destruir listas
+=destruirlista lista1
+=destruirlista lista0
+
+
+
+== Verificar contadores, todos deles já contaram
+=verificarcontagens    0
+=contagemcontador   "LIS_CriarLista"  2
+=contagemcontador   "LimparCabeca"  4
+=contagemcontador   "LIS_InserirElementoAntes"  1
+=contagemcontador   "LIS_InserirElementoApos"  1
+=contagemcontador   "LIS_ObterValor"  3
+=contagemcontador   "CriarElemento"  2
+=contagemcontador   "LIS_IrFinalLista"  1
+=contagemcontador   "LIS_IrInicioLista"  1
+=contagemcontador   "LIS_ExcluirElemento"  1
+=contagemcontador   "LIS_ProcurarValor"  1
+=contagemcontador   "LIS_DestruirLista"  2
+=contagemcontador   "LiberarElemento" 2
+=contagemcontador   "LimparCabeca" 4  
+=AceitaFalhasAcumuladas 0
+
+// fim

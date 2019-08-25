@@ -1,0 +1,27 @@
+#if ! defined( TIPOS_TABULEIRO_ )
+#define TIPOS_TABULEIRO_
+/***************************************************************************
+*
+*  $MCD Arquivo de definição: TiposEspacosTABULEIRO.def
+*
+*  Projeto: Xadrez
+* 
+*  Autor: Nicolas Cortez
+*
+*  $ED Descrição do arquivo
+*     Este arquivo declara os identificadores de tipos dos espaços de dados
+*		utilizados pelo módulo tabuleiro. O módulo obedece o padrão estabelecido
+*     pelo módulo CNTESPAC. Ou seja, contém uma seqüência de declaradores
+*     a serem incluídos em um enum. Cada declarador corresponde a um dos
+*     tipos de espaço de dados.
+*
+***************************************************************************/
+
+      LIS_TipoEspacoCabeca , 
+      LIS_TipoEspacoElemento     ,
+      TAB_TipoEspacoCabeca ,
+      TAB_TipoEspacoPeca ,
+
+/********** Fim do arquivo de definição: TiposEspacosTabuleiro.def  **********/
+
+#endif

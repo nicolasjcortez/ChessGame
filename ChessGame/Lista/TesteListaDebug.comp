@@ -1,0 +1,22 @@
+# Composicao do programa de teste de uma lista genérica duplamente encadeada
+# Com debug
+
+[Diretorios]
+
+Nome        =  TesteListaDebug
+PathDefault =  .
+err         =  .
+
+[Modulos]
+TestLis    /D_DEBUG
+Lista      /D_DEBUG
+
+[BuildInicio]
+/OUT:TesteListaDebug.exe
+/INCREMENTAL:NO
+/MACHINE:IX86
+
+[BuildFim]
+ArcaboucoTeste.lib
+
+[Fim]

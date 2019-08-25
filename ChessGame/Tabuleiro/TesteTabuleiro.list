@@ -1,0 +1,200 @@
+GERADOR DE SCRIPT DE DIRETIVAS PARA MAKE
+   LES / Informática / PUC-Rio    Versão 6.00 (c) 2005
+
+Composição do construto: TesteTabuleiro.comp
+
+   Nome do Construto:           TesteTabuleiro
+   Diretório base:              C:\t4_mod\ConstT4\Tabuleiro
+
+   Arquivo composição:          TesteTabuleiro.comp
+   Arquivo plataforma:          gmake.parm
+
+   Arquivo diretivas MAKE:      TesteTabuleiro.make
+   Arquivo diretivas LINK:      TesteTabuleiro.build
+   Arquivo listagem:            TesteTabuleiro.list
+
+Módulos do construto: TesteTabuleiro.comp
+
+   TESTTAB.c
+   TABULEIRO.c
+   LISTA.c
+
+Estatísticas do construto
+
+   Estatísticas do arquivo: Conta.h
+      Total linhas:             468
+      Linhas de código:          43
+      Linhas de comentário:     349
+      Linhas em branco:          76
+   Arquivos em que é incluído
+      LISTA.c
+
+   Estatísticas do arquivo: Generico.h
+      Total linhas:             561
+      Linhas de código:          58
+      Linhas de comentário:     433
+      Linhas em branco:          70
+   Arquivos de inclusão de que necessita
+      TST_Espc.h
+   Arquivos em que é incluído
+      LISTA.c
+      TESTTAB.c
+
+   Estatísticas do arquivo: IdTiposEspaco.def
+      Total linhas:              35
+      Linhas de código:           9
+      Linhas de comentário:      21
+      Linhas em branco:           5
+   Arquivos de inclusão de que necessita
+      TiposEspacosLista.def
+   Arquivos em que é incluído
+      LISTA.c
+
+   Estatísticas do arquivo: LISTA.H
+      Total linhas:             631
+      Linhas de código:          72
+      Linhas de comentário:     362
+      Linhas em branco:         197
+   Arquivos em que é incluído
+      TABULEIRO.c
+
+   Estatísticas do arquivo: LISTA.c
+      Total linhas:            1661
+      Linhas de código:         675
+      Linhas de comentário:     234
+      Linhas em branco:         797
+   Arquivos de inclusão de que necessita
+      Conta.h
+      Generico.h
+      IdTiposEspaco.def
+      TST_Espc.h
+      TiposEspacosLista.def
+      cespdin.h
+      lista.h
+
+   Estatísticas do arquivo: LerParm.h
+      Total linhas:             306
+      Linhas de código:          36
+      Linhas de comentário:     203
+      Linhas em branco:          67
+   Arquivos em que é incluído
+      TESTTAB.c
+
+   Estatísticas do arquivo: Lista.h
+      Total linhas:             631
+      Linhas de código:          72
+      Linhas de comentário:     362
+      Linhas em branco:         197
+   Arquivos em que é incluído
+      TESTTAB.c
+
+   Estatísticas do arquivo: TABULEIRO.c
+      Total linhas:            1097
+      Linhas de código:         559
+      Linhas de comentário:     385
+      Linhas em branco:         184
+   Arquivos de inclusão de que necessita
+      LISTA.H
+      TABULEIRO.h
+
+   Estatísticas do arquivo: TABULEIRO.h
+      Total linhas:             453
+      Linhas de código:          44
+      Linhas de comentário:     338
+      Linhas em branco:          71
+   Arquivos em que é incluído
+      TABULEIRO.c
+
+   Estatísticas do arquivo: TESTTAB.c
+      Total linhas:             453
+      Linhas de código:         301
+      Linhas de comentário:      53
+      Linhas em branco:         101
+   Arquivos de inclusão de que necessita
+      Generico.h
+      LerParm.h
+      Lista.h
+      TST_Espc.h
+      Tabuleiro.h
+
+   Estatísticas do arquivo: TST_Espc.h
+      Total linhas:             228
+      Linhas de código:          23
+      Linhas de comentário:     185
+      Linhas em branco:          20
+   Arquivos em que é incluído
+      Generico.h
+      LISTA.c
+      TESTTAB.c
+
+   Estatísticas do arquivo: Tabuleiro.h
+      Total linhas:             453
+      Linhas de código:          44
+      Linhas de comentário:     338
+      Linhas em branco:          71
+   Arquivos em que é incluído
+      TESTTAB.c
+
+   Estatísticas do arquivo: TiposEspacosLista.def
+      Total linhas:              25
+      Linhas de código:           5
+      Linhas de comentário:      17
+      Linhas em branco:           3
+   Arquivos em que é incluído
+      IdTiposEspaco.def
+      LISTA.c
+
+   Estatísticas do arquivo: cespdin.h
+      Total linhas:             668
+      Linhas de código:          52
+      Linhas de comentário:     519
+      Linhas em branco:          97
+   Arquivos em que é incluído
+      LISTA.c
+
+   Estatísticas do arquivo: lista.h
+      Total linhas:             631
+      Linhas de código:          72
+      Linhas de comentário:     362
+      Linhas em branco:         197
+   Arquivos em que é incluído
+      LISTA.c
+
+Totais por tipo de arquivo
+
+  Tipo: obj      Path: .
+         Total linhas do tipo:         0
+         Linhas de código:             0
+         Linhas de comentário:         0
+         Linhas em branco:             0
+         Arquivos deste tipo:          0
+
+  Tipo: err      Path: .
+         Total linhas do tipo:         0
+         Linhas de código:             0
+         Linhas de comentário:         0
+         Linhas em branco:             0
+         Arquivos deste tipo:          0
+
+  Tipo: DEFAULT  Path: .
+         Total linhas do tipo:      5090
+         Linhas de código:           530
+         Linhas de comentário:      3489
+         Linhas em branco:          1071
+         Arquivos deste tipo:         12
+
+  Tipo: c        Path: .
+         Total linhas do tipo:      3211
+         Linhas de código:          1535
+         Linhas de comentário:       672
+         Linhas em branco:          1082
+         Arquivos deste tipo:          3
+
+Totais para todo o construto TesteTabuleiro
+
+   Total linhas:              8301
+   Linhas de código:          2065
+   Linhas de comentário:      4161
+   Linhas em branco:          2153
+   Arquivos processados:        15
+

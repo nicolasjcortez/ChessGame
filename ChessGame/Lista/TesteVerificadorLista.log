@@ -1,0 +1,112 @@
+
+!!! Inicio dos testes
+!!!      Construto sob teste: testeListaDebug
+!!!      Script de teste:     TesteCoberturaArestaVerificador.script
+
+!!!    0  Linha:     1  // Script:    TesteDeturpaLista-1.script 
+!!!    0  Linha:     2  // Autor:     Nicolas Cortez 
+!!!    0  Linha:     3  // Data:      6/12/2014 
+!!!    0  Linha:     4  // Propósito: Testar construção de lista 
+!!!    0  Linha:     5  // 
+    8  == Inicializar valores
+   29  ==Iniciar contagem
+   34  == Criar lista
+   44  == Verificar lista
+   47  == Anular ponteiro anterior
+>>>    1  Linha:    49  Elemento não tem anterior e nao eh origem da lista. Deveria ser: 0029AEBA  É: 0029ABAA
+<<<    0  Linha:    50  Falhas registradas eram esperadas e foram recuperadas. 
+   52  == Destruir a lista
+   55  == Criar lista
+   65  == Anular ponteiro proximo
+>>>    1  Linha:    67  Elemento não tem proximo e nao eh fim da lista. Deveria ser: 0029B23A  É: 0029B112
+<<<    0  Linha:    68  Falhas registradas eram esperadas e foram recuperadas. 
+   70  == Destruir a lista
+   75  == Criar lista
+   85  ==Lixo ponteiro anterior
+>>>    1  Linha:    87  Proximo de anterior não é este elemento. Deveria ser: 0029D5BA  É: 78787878
+<<<    0  Linha:    88  Falhas registradas eram esperadas e foram recuperadas. 
+   90  == Destruir a lista
+   94  == Criar lista
+  105  ==Anula ponteiro corrente
+>>>    1  Linha:   107  Lista nao vazia tem elemento corrente NULL. Deveria ser: 00000000  É: 0029D75A
+<<<    0  Linha:   108  Falhas registradas eram esperadas e foram recuperadas. 
+  111  == Destruir a lista
+  114  == Criar lista
+  125  ==Lixo ponteiro corrente
+>>>    1  Linha:   127  Elemento corrente não aponta para cabeça. Deveria ser: 0029D82A  É: 78787878
+<<<    0  Linha:   128  Falhas registradas eram esperadas e foram recuperadas. 
+  131  == Destruir a lista
+  134  == Criar lista
+  145  ==Anula ponteiro origem
+>>>    1  Linha:   147  Lista vazia tem elemento corrente não NULL. Deveria ser: 00000000  É: 0029DD0A
+<<<    0  Linha:   148  Falhas registradas eram esperadas e foram recuperadas. 
+  151  == Destruir a lista
+  154  == Criar lista
+  165  ==Anula ponteiro valor
+>>>    1  Linha:   167  Tentou verificar elemento com valor nulo. 
+<<<    0  Linha:   168  Falhas registradas eram esperadas e foram recuperadas. 
+  170  == Destruir a lista
+  173  == Criar lista
+  184  ==Anular ponteiro fim
+>>>    1  Linha:   186  Lista vazia tem elemento corrente não NULL. Deveria ser: 00000000  É: 0029E2BA
+<<<    0  Linha:   187  Falhas registradas eram esperadas e foram recuperadas. 
+  190  == Destruir a lista
+  193  == Criar lista
+  204  ==Lixo ponteiro fim
+>>>    1  Linha:   206  Elemento fim não aponta para cabeça. Deveria ser: 0029E1EA  É: 78787878
+<<<    0  Linha:   207  Falhas registradas eram esperadas e foram recuperadas. 
+  209  == Destruir a lista
+  212  == Criar lista
+  223  ==Alterar tipo cabeca
+>>>    1  Linha:   225  Tipo do espaço de dados não é cabeça de lista. Deveria ser: 1  É: 0
+<<<    0  Linha:   226  Falhas registradas eram esperadas e foram recuperadas. 
+  228  == Destruir a lista
+  232  == Criar lista
+  243  ==Anular ponteiro cabeca
+>>>    1  Linha:   245  Elemento corrente não aponta para cabeça. Deveria ser: 0029E38A  É: 00000000
+<<<    0  Linha:   246  Falhas registradas eram esperadas e foram recuperadas. 
+  248  == Destruir a lista
+  252  == Criar lista
+  263  ==Lixo ponteiro cabeca
+>>>    1  Linha:   265  Elemento corrente não aponta para cabeça. Deveria ser: 0045830A  É: 00DCD1F8
+<<<    0  Linha:   266  Falhas registradas eram esperadas e foram recuperadas. 
+  268  == Destruir a lista
+  272  == Criar lista
+  283  ==Alterar tipo elemento
+>>>    1  Linha:   285  Tipo do espaço de dados não é elemento de lista. Deveria ser: 2  É: 0
+<<<    0  Linha:   286  Falhas registradas eram esperadas e foram recuperadas. 
+  288  == Destruir a lista
+  292  == Criar lista
+  302  ==Verificacao de uma lista nula
+>>>    1  Linha:   303  Tentou verificar cabeça inexistente. 
+<<<    0  Linha:   304  Falhas registradas eram esperadas e foram recuperadas. 
+  306  ==Verificacao de um elemento orgiem
+>>>    1  Linha:   309  Elemento origem não aponta para cabeça. Deveria ser: 0045871A  É: 00DCD1F8
+<<<    0  Linha:   310  Falhas registradas eram esperadas e foram recuperadas. 
+  312  == Destruir a lista
+  315  == Criar lista
+  325  ==Verificacao de um elemento inexistente
+>>>    1  Linha:   327  Tentou verificar elemento inexistente. 
+<<<    0  Linha:   328  Falhas registradas eram esperadas e foram recuperadas. 
+  330  == Destruir a lista
+  334  == Verificar Lista Vazia
+  340  == Verificar contadores, todos deles já contaram
+cc>    1  Linha:   341   Contagem em "LIS_ExcluirElemento" é zero.
+cc>    2  Linha:   341   Contagem em "LIS_ProcurarValor" é zero.
+cc>    3  Linha:   341   Contagem em "LIS_Verificador12" é zero.
+cc>    4  Linha:   341   Contagem em "LIS_Verificador15" é zero.
+cc>    5  Linha:   341   Contagem em "LIS_Verificador16" é zero.
+cc>    6  Linha:   341   Contagem em "LIS_Verificador17" é zero.
+cc>    7  Linha:   341   Contagem em "LIS_Verificador20.5" é zero.
+<<<    0  Linha:   342  Falhas registradas eram esperadas e foram recuperadas. 
+!!!    0  Linha:   345  // fim 
+
+!!! Número de linhas lidas:         345
+!!! Número de casos de teste:        51
+!!! Número comandos corretos:       206
+!!! Número de falhas encontradas:     0
+
+!!! Não foram encontrados problemas
+
+
+!!! Numero de espacos ainda alocados: 12

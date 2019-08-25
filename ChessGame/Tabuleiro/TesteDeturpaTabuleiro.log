@@ -1,0 +1,91 @@
+
+!!! Inicio dos testes
+!!!      Construto sob teste: TesteTabuleiroDebug
+!!!      Script de teste:     TesteDeturpaTabuleiro.script
+
+!!!    0  Linha:     1  // Script:    TesteTabuleiro.script 
+!!!    0  Linha:     2  // Autor:     Nicolas Jordao Cortez 
+!!!    0  Linha:     3  // Data:      15/10/2014 
+!!!    0  Linha:     4  // PropÛsito: testar o modulo peca 
+    6  ==Iniciar contagem
+   11  == Inicializar valores
+   54  == Criar uma peca
+   57  ==Criar um tabuleiro
+   60  ==Modificar tipo tabuleiro
+>>>    1  Linha:    62  Tipo do espa√ßo de dados n√£o √© cabe√ßa de tabuleiro. Deveria ser: 3  …: 0
+<<<    0  Linha:    63  Falhas registradas eram esperadas e foram recuperadas. 
+   65  == Destruir tabuleiro
+   68  ==Criar um tabuleiro
+   71  ==Lixo ponteiro cabeca
+>>>    1  Linha:    73  Alguma casa aponta pro tabuleiro(pCabeca) errado. Deveria ser: 00820338  …: 002AF032
+<<<    0  Linha:    74  Falhas registradas eram esperadas e foram recuperadas. 
+   76  == Destruir tabuleiro
+   79  ==Criar um tabuleiro
+   82  ==Altera a linha corrente de uma pecaDaCasa
+>>>    1  Linha:    84  Redundancia casa-peca (Linha) incorreta. Deveria ser: 6  …: 0
+<<<    0  Linha:    85  Falhas registradas eram esperadas e foram recuperadas. 
+   87  == Destruir tabuleiro
+   90  ==Criar um tabuleiro
+   93  ==Altera a coluna corrente de uma pecaDaCasa
+>>>    1  Linha:    95  Redundancia casa-peca (coluna) incorreta. Deveria ser: 7  …: 0
+<<<    0  Linha:    96  Falhas registradas eram esperadas e foram recuperadas. 
+   98  == Destruir tabuleiro
+  101  ==Criar um tabuleiro
+  104  ==Altera a redundancia de linha(i)
+>>>    1  Linha:   106  Redundancia cabeca-casa (linha) incorreta. Deveria ser: 0  …: 8
+<<<    0  Linha:   107  Falhas registradas eram esperadas e foram recuperadas. 
+  109  == Destruir tabuleiro
+  113  == Verificar contadores, todos TAB_VerificadorX j· contaram
+cc>    1  Linha:   114   Contagem em "CriarElemento" È zero.
+cc>    2  Linha:   114   Contagem em "LIS_AvancarElementoCorrente" È zero.
+cc>    3  Linha:   114   Contagem em "LIS_ExcluirElemento" È zero.
+cc>    4  Linha:   114   Contagem em "LIS_InserirElementoAntes" È zero.
+cc>    5  Linha:   114   Contagem em "LIS_InserirElementoApos" È zero.
+cc>    6  Linha:   114   Contagem em "LIS_IrFinalLista" È zero.
+cc>    7  Linha:   114   Contagem em "LIS_IrInicioLista" È zero.
+cc>    8  Linha:   114   Contagem em "LIS_ObterValor" È zero.
+cc>    9  Linha:   114   Contagem em "LIS_ProcurarValor" È zero.
+cc>   10  Linha:   114   Contagem em "LIS_Verificador1" È zero.
+cc>   11  Linha:   114   Contagem em "LIS_Verificador11" È zero.
+cc>   12  Linha:   114   Contagem em "LIS_Verificador12" È zero.
+cc>   13  Linha:   114   Contagem em "LIS_Verificador13" È zero.
+cc>   14  Linha:   114   Contagem em "LIS_Verificador14" È zero.
+cc>   15  Linha:   114   Contagem em "LIS_Verificador15" È zero.
+cc>   16  Linha:   114   Contagem em "LIS_Verificador15.5" È zero.
+cc>   17  Linha:   114   Contagem em "LIS_Verificador16" È zero.
+cc>   18  Linha:   114   Contagem em "LIS_Verificador17" È zero.
+cc>   19  Linha:   114   Contagem em "LIS_Verificador17.5" È zero.
+cc>   20  Linha:   114   Contagem em "LIS_Verificador18" È zero.
+cc>   21  Linha:   114   Contagem em "LIS_Verificador18.5" È zero.
+cc>   22  Linha:   114   Contagem em "LIS_Verificador19" È zero.
+cc>   23  Linha:   114   Contagem em "LIS_Verificador19.5" È zero.
+cc>   24  Linha:   114   Contagem em "LIS_Verificador20" È zero.
+cc>   25  Linha:   114   Contagem em "LIS_Verificador20.5" È zero.
+cc>   26  Linha:   114   Contagem em "LIS_Verificador21" È zero.
+cc>   27  Linha:   114   Contagem em "LIS_Verificador3" È zero.
+cc>   28  Linha:   114   Contagem em "LIS_Verificador4" È zero.
+cc>   29  Linha:   114   Contagem em "LIS_Verificador4.5" È zero.
+cc>   30  Linha:   114   Contagem em "LIS_Verificador5" È zero.
+cc>   31  Linha:   114   Contagem em "LIS_Verificador6" È zero.
+cc>   32  Linha:   114   Contagem em "LIS_Verificador6.5" È zero.
+cc>   33  Linha:   114   Contagem em "LIS_Verificador7" È zero.
+cc>   34  Linha:   114   Contagem em "LIS_Verificador8" È zero.
+cc>   35  Linha:   114   Contagem em "LIS_Verificador8.5" È zero.
+cc>   36  Linha:   114   Contagem em "LIS_Verificador9" È zero.
+cc>   37  Linha:   114   Contagem em "LiberarElemento" È zero.
+cc>   38  Linha:   114   Contagem em "TAB_Verificador10" È zero.
+cc>   39  Linha:   114   Contagem em "TAB_Verificador12" È zero.
+cc>   40  Linha:   114   Contagem em "TAB_Verificador3" È zero.
+cc>   41  Linha:   114   Contagem em "TAB_Verificador9" È zero.
+<<<    0  Linha:   115  Falhas registradas eram esperadas e foram recuperadas. 
+!!!    0  Linha:   118  // fim 
+
+!!! N˙mero de linhas lidas:         118
+!!! N˙mero de casos de teste:        19
+!!! N˙mero comandos corretos:        65
+!!! N˙mero de falhas encontradas:     0
+
+!!! N„o foram encontrados problemas
+
+
+!!! Numero de espacos ainda alocados: 6

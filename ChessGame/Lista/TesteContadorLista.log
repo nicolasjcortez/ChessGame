@@ -1,0 +1,54 @@
+
+!!! Inicio dos testes
+!!!      Construto sob teste: testeListaDebug
+!!!      Script de teste:     TesteContadorLista.script
+
+!!!    0  Linha:     1  // Script:    TesteContadorLista.script 
+!!!    0  Linha:     2  // Autor:     Arndt von Staa 
+!!!    0  Linha:     3  // Data:      6/12/2014 
+!!!    0  Linha:     4  // Propósito:  script para controle de cobertura 
+!!!    0  Linha:     5  // 
+    7  == Inicializar valores
+   26  ==Iniciar contagem
+   31  == Criar a lista 0
+   35  == Verificar contadores, 2 deles já contaram
+cc>    1  Linha:    36   Contagem em "CriarElemento" é zero.
+cc>    2  Linha:    36   Contagem em "LIS_AvancarElementoCorrente" é zero.
+cc>    3  Linha:    36   Contagem em "LIS_DestruirLista" é zero.
+cc>    4  Linha:    36   Contagem em "LIS_EsvaziarLista" é zero.
+cc>    5  Linha:    36   Contagem em "LIS_ExcluirElemento" é zero.
+cc>    6  Linha:    36   Contagem em "LIS_InserirElementoAntes" é zero.
+cc>    7  Linha:    36   Contagem em "LIS_InserirElementoApos" é zero.
+cc>    8  Linha:    36   Contagem em "LIS_IrFinalLista" é zero.
+cc>    9  Linha:    36   Contagem em "LIS_IrInicioLista" é zero.
+cc>   10  Linha:    36   Contagem em "LIS_ObterValor" é zero.
+cc>   11  Linha:    36   Contagem em "LIS_ProcurarValor" é zero.
+cc>   12  Linha:    36   Contagem em "LiberarElemento" é zero.
+<<<    0  Linha:    39  Falhas registradas eram esperadas e foram recuperadas. 
+   42  == Criar lista
+   48  ==Avancar do elemento fim
+   51  ==Ir para o fim do fim
+   55  == Verificar contadores, 6 deles já contaram
+cc>    1  Linha:    56   Contagem em "LIS_DestruirLista" é zero.
+cc>    2  Linha:    56   Contagem em "LIS_EsvaziarLista" é zero.
+cc>    3  Linha:    56   Contagem em "LIS_ExcluirElemento" é zero.
+cc>    4  Linha:    56   Contagem em "LIS_IrInicioLista" é zero.
+cc>    5  Linha:    56   Contagem em "LIS_ProcurarValor" é zero.
+cc>    6  Linha:    56   Contagem em "LiberarElemento" é zero.
+<<<    0  Linha:    64  Falhas registradas eram esperadas e foram recuperadas. 
+   66  ==Excluir o inicio
+   71  ==Procurar valor e nao encontrar
+   76  ==Destruir listas
+   82  == Verificar contadores, todos deles já contaram
+<<<    0  Linha:    97  Falhas registradas eram esperadas e foram recuperadas. 
+!!!    0  Linha:    99  // fim 
+
+!!! Número de linhas lidas:          99
+!!! Número de casos de teste:        12
+!!! Número comandos corretos:        59
+!!! Número de falhas encontradas:     0
+
+!!! Não foram encontrados problemas
+
+
+!!! Numero de espacos ainda alocados: 0

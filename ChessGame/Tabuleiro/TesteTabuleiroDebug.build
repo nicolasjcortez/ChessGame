@@ -1,0 +1,6 @@
+/OUT:TesteTabuleiroDebug.exe
+/INCREMENTAL:NO
+/MACHINE:IX86
+TESTTAB.obj  TABULEIRO.obj  LISTA.obj  
+ArcaboucoTeste.lib
+

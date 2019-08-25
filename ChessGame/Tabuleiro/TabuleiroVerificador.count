@@ -1,0 +1,72 @@
+////////////////////////////////////////////////
+//
+// Exemplo de arquivo de declaração de contadores
+// Conta a funcao de verificacao de Lista e Tabuleiro
+//
+///////////////////////////////////////////////
+    
+        TAB_Verificador1
+        TAB_Verificador2
+        TAB_Verificador3
+
+        TAB_Verificador5
+        TAB_Verificador6
+        TAB_Verificador7
+        TAB_Verificador8
+        TAB_Verificador9
+        TAB_Verificador10
+        TAB_Verificador11
+        TAB_Verificador12
+        TAB_Verificador13
+        TAB_Verificador14
+        TAB_Verificador15
+
+	LIS_Verificador1
+	
+	LIS_Verificador3
+	LIS_Verificador4
+	LIS_Verificador4.5
+	LIS_Verificador5
+	LIS_Verificador5.5
+	LIS_Verificador6
+	LIS_Verificador6.5
+	LIS_Verificador7
+	LIS_Verificador7.5
+	LIS_Verificador8
+	LIS_Verificador8.5
+	LIS_Verificador9
+	LIS_Verificador9.5
+	LIS_Verificador10
+	LIS_Verificador11
+	LIS_Verificador12
+	LIS_Verificador13
+	LIS_Verificador14
+	LIS_Verificador15
+	LIS_Verificador15.5
+	LIS_Verificador16
+	LIS_Verificador17
+	LIS_Verificador17.5
+	LIS_Verificador18
+	LIS_Verificador18.5
+	LIS_Verificador19
+	LIS_Verificador19.5
+	LIS_Verificador20
+	LIS_Verificador20.5
+	LIS_Verificador21
+
+	LIS_CriarLista
+	LIS_DestruirLista
+	LIS_EsvaziarLista
+	LIS_InserirElementoAntes
+	LIS_InserirElementoApos
+	LIS_ExcluirElemento
+	LIS_ObterValor
+	LIS_IrInicioLista
+	LIS_IrFinalLista
+	LIS_AvancarElementoCorrente
+	LIS_ProcurarValor
+	LiberarElemento
+	CriarElemento
+	LimparCabeca
+
+	     XPTO nome adicionado para fins de teste\=-2

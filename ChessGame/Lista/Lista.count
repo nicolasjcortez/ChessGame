@@ -1,0 +1,22 @@
+////////////////////////////////////////////////
+//
+// Exemplo de arquivo de declaração de contadores
+// Conta módulo Lista marcado
+//
+///////////////////////////////////////////////
+    
+	LIS_CriarLista
+	LIS_DestruirLista
+	LIS_EsvaziarLista
+	LIS_InserirElementoAntes
+	LIS_InserirElementoApos
+	LIS_ExcluirElemento
+	LIS_ObterValor
+	LIS_IrInicioLista
+	LIS_IrFinalLista
+	LIS_AvancarElementoCorrente
+	LIS_ProcurarValor
+	LiberarElemento
+	CriarElemento
+	LimparCabeca
+	     XPTO nome adicionado para fins de teste\=-2

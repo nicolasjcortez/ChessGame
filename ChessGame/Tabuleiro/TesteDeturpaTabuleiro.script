@@ -1,0 +1,118 @@
+// Script:    TesteTabuleiro.script
+// Autor:     Nicolas Jordao Cortez
+// Data:      15/10/2014
+// Propósito: testar o modulo peca
+
+==Iniciar contagem
+=inicializarcontadores ""
+=lercontadores "TabuleiroVerificador"
+=iniciarcontagem
+
+== Inicializar valores
+
+=declararparm   linha1  int 0
+=declararparm   linha2  int 1
+=declararparm   linha3  int 2
+=declararparm   linha4  int 3
+=declararparm   linha5  int 4
+=declararparm   linha6  int 5
+=declararparm   linha7  int 6
+=declararparm   linha8  int 7
+
+=declararparm   colunaA  int 0
+=declararparm   colunaB  int 1
+=declararparm   colunaC  int 2
+=declararparm   colunaD  int 3
+=declararparm   colunaE  int 4
+=declararparm   colunaF  int 5
+=declararparm   colunaG  int 6
+=declararparm   colunaH  int 7
+
+=declararparm   torre   char 'T'
+=declararparm   cavalo  char 'C'
+=declararparm   rei     char 'R'
+=declararparm   rainha  char 'D'
+=declararparm   bispo   char 'B'
+=declararparm   peao    char 'P'
+
+=declararparm   branca    char  'B'
+=declararparm   preta    char  'P'
+
+=declararparm   vazio    char  'V'
+
+=declararparm   OK                     int  0
+=declararparm   OrigemSemPeca          int  1
+=declararparm   MovimentoInvalido      int  2
+=declararparm   Colisao                int  3
+=declararparm   PecaInvalida           int  4
+=declararparm   CoordenadaInvalida     int  5
+=declararparm   ErroEstrutura          int  6
+
+=declararparm   pNULL          int  0
+=declararparm   pNaoNULL       int  1
+
+== Criar uma peca
+=criarpeca 
+
+==Criar um tabuleiro
+=criartabuleiro
+
+==Modificar tipo tabuleiro
+=deturpar           0
+=verificartabuleiro    ErroEstrutura
+=AceitaFalhasAcumuladas     1
+
+== Destruir tabuleiro
+=destruirtabuleiro 
+
+==Criar um tabuleiro
+=criartabuleiro
+
+==Lixo ponteiro cabeca
+=deturpar           2
+=verificartabuleiro    ErroEstrutura
+=AceitaFalhasAcumuladas     1
+
+== Destruir tabuleiro
+=destruirtabuleiro 
+
+==Criar um tabuleiro
+=criartabuleiro
+
+==Altera a linha corrente de uma pecaDaCasa
+=deturpar           3
+=verificartabuleiro    ErroEstrutura
+=AceitaFalhasAcumuladas     1
+
+== Destruir tabuleiro
+=destruirtabuleiro 
+
+==Criar um tabuleiro
+=criartabuleiro
+
+==Altera a coluna corrente de uma pecaDaCasa
+=deturpar           4
+=verificartabuleiro    ErroEstrutura
+=AceitaFalhasAcumuladas     1
+
+== Destruir tabuleiro
+=destruirtabuleiro 
+
+==Criar um tabuleiro
+=criartabuleiro
+
+==Altera a redundancia de linha(i) 
+=deturpar           5
+=verificartabuleiro    ErroEstrutura
+=AceitaFalhasAcumuladas     1
+
+== Destruir tabuleiro
+=destruirtabuleiro 
+
+
+== Verificar contadores, todos TAB_VerificadorX já contaram
+=verificarcontagens    41
+=AceitaFalhasAcumuladas 41
+
+
+// fim

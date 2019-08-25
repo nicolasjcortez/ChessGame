@@ -1,0 +1,89 @@
+
+!!! Inicio dos testes
+!!!      Construto sob teste: testeListaDebug
+!!!      Script de teste:     TesteDeturpaLista.script
+
+!!!    0  Linha:     1  // Script:    TesteDeturpaLista-1.script 
+!!!    0  Linha:     2  // Autor:     Nicolas Cortez 
+!!!    0  Linha:     3  // Data:      6/12/2014 
+!!!    0  Linha:     4  // Propósito: Testar construção de lista 
+!!!    0  Linha:     5  // 
+    8  == Inicializar valores
+   29  == Iniciar contadores de passagem
+   32  == Criar lista
+   42  == Verificar lista
+   45  == Anular ponteiro anterior
+>>>    1  Linha:    47  Elemento não tem anterior e nao eh origem da lista. Deveria ser: 0052AEAA  É: 0052AB9A
+<<<    0  Linha:    48  Falhas registradas eram esperadas e foram recuperadas. 
+   50  == Destruir a lista
+   53  == Criar lista
+   63  == Anular ponteiro proximo
+>>>    1  Linha:    65  Elemento não tem proximo e nao eh fim da lista. Deveria ser: 0052B22A  É: 0052B102
+<<<    0  Linha:    66  Falhas registradas eram esperadas e foram recuperadas. 
+   68  == Destruir a lista
+   73  == Criar lista
+   83  ==Lixo ponteiro anterior
+>>>    1  Linha:    85  Proximo de anterior não é este elemento. Deveria ser: 0052B632  É: 78787878
+<<<    0  Linha:    86  Falhas registradas eram esperadas e foram recuperadas. 
+   88  == Destruir a lista
+   92  == Criar lista
+  103  ==Anula ponteiro corrente
+>>>    1  Linha:   105  Lista nao vazia tem elemento corrente NULL. Deveria ser: 00000000  É: 0052B76A
+<<<    0  Linha:   106  Falhas registradas eram esperadas e foram recuperadas. 
+  109  == Destruir a lista
+  112  == Criar lista
+  123  ==Lixo ponteiro corrente
+>>>    1  Linha:   125  Elemento corrente não aponta para cabeça. Deveria ser: 0052B83A  É: 78787878
+<<<    0  Linha:   126  Falhas registradas eram esperadas e foram recuperadas. 
+  129  == Destruir a lista
+  132  == Criar lista
+  143  ==Anula ponteiro origem
+>>>    1  Linha:   145  Lista vazia tem elemento corrente não NULL. Deveria ser: 00000000  É: 0052BD1A
+<<<    0  Linha:   146  Falhas registradas eram esperadas e foram recuperadas. 
+  149  == Destruir a lista
+  152  == Criar lista
+  163  ==Anula ponteiro valor
+>>>    1  Linha:   165  Tentou verificar elemento com valor nulo. 
+<<<    0  Linha:   166  Falhas registradas eram esperadas e foram recuperadas. 
+  168  == Destruir a lista
+  171  == Criar lista
+  182  ==Anular ponteiro fim
+>>>    1  Linha:   184  Lista vazia tem elemento corrente não NULL. Deveria ser: 00000000  É: 0052C2CA
+<<<    0  Linha:   185  Falhas registradas eram esperadas e foram recuperadas. 
+  188  == Destruir a lista
+  191  == Criar lista
+  202  ==Lixo ponteiro fim
+>>>    1  Linha:   204  Elemento fim não aponta para cabeça. Deveria ser: 0052C1FA  É: 78787878
+<<<    0  Linha:   205  Falhas registradas eram esperadas e foram recuperadas. 
+  207  == Destruir a lista
+  210  == Criar lista
+  221  ==Alterar tipo cabeca
+>>>    1  Linha:   223  Tipo do espaço de dados não é cabeça de lista. Deveria ser: 1  É: 0
+<<<    0  Linha:   224  Falhas registradas eram esperadas e foram recuperadas. 
+  226  == Destruir a lista
+  230  == Criar lista
+  241  ==Anular ponteiro cabeca
+>>>    1  Linha:   243  Elemento corrente não aponta para cabeça. Deveria ser: 0052C39A  É: 00000000
+<<<    0  Linha:   244  Falhas registradas eram esperadas e foram recuperadas. 
+  246  == Destruir a lista
+  250  == Criar lista
+  261  ==Lixo ponteiro cabeca
+>>>    1  Linha:   263  Elemento corrente não aponta para cabeça. Deveria ser: 0052DC1A  É: 0135D1F8
+<<<    0  Linha:   264  Falhas registradas eram esperadas e foram recuperadas. 
+  266  == Destruir a lista
+  270  == Criar lista
+  281  ==Alterar tipo elemento
+>>>    1  Linha:   283  Tipo do espaço de dados não é elemento de lista. Deveria ser: 2  É: 0
+<<<    0  Linha:   284  Falhas registradas eram esperadas e foram recuperadas. 
+  286  == Destruir a lista
+!!!    0  Linha:   292  // fim 
+
+!!! Número de linhas lidas:         292
+!!! Número de casos de teste:        42
+!!! Número comandos corretos:       173
+!!! Número de falhas encontradas:     0
+
+!!! Não foram encontrados problemas
+
+
+!!! Numero de espacos ainda alocados: 11

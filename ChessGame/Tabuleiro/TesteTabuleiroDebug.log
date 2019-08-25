@@ -1,0 +1,35 @@
+
+!!! Inicio dos testes
+!!!      Construto sob teste: TesteTabuleiroDebug
+!!!      Script de teste:     TesteTabuleiroDebug.script
+
+!!!    0  Linha:     1  // Script:    TesteTabuleiro.script 
+!!!    0  Linha:     2  // Autor:     Nicolas Jordao Cortez 
+!!!    0  Linha:     3  // Data:      15/10/2014 
+!!!    0  Linha:     4  // Propósito: testar o modulo peca 
+    6  ==Iniciar contagem
+    9  == Inicializar valores
+   51  == Criar uma peca
+   54  ==Criar um tabuleiro
+   57  == Inserir uma rainha e movimenta-la verificando a corretude a cada passo
+   74  == Inserir um peao e movimenta-lo verificando a corretude a cada passo
+   96  == Inserir uma torre e movimenta-lo verificando a corretude a cada passo
+  114  == Inserir uma rei e movimenta-lo verificando a corretude a cada passo
+  138  == Inserir um cavalo e movimenta-lo verificando a corretude a cada passo
+  158  == Inserir um bispo e movimenta-lo verificando a corretude a cada passo
+  177  == Retirar peca
+  180  == verificar peca retirada no tabuleiro
+  183  ==verificar se uma casa possui lista de ameacantes e lista de ameacados
+  187  == Mover peca de uma casa vazia
+  190  == Destruir tabuleiro
+!!!    0  Linha:   193  // fim 
+
+!!! Número de linhas lidas:         193
+!!! Número de casos de teste:        15
+!!! Número comandos corretos:       147
+!!! Número de falhas encontradas:     0
+
+!!! Não foram encontrados problemas
+
+
+!!! Numero de espacos ainda alocados: 2
